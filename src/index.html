@@ -1,0 +1,28 @@
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="signup">
+		<form class="form-wrapper signup__form">
+			<label for="username">Username:</label>
+			<input class="username signup__form-control" name="username" type="text" required>
+			
+			<label for="password">Password:</label>
+			<input class="password signup__form-control" name="password" type="text" required>
+
+			<label for="password_confirm">Password Confirmation:</label>
+			<input class="password_confirm signup__form-control" name="password_confirm" type="text" required>
+			<div class="signup__mismatch">
+				<span>Password does not match. Please enter matching password.</span>
+			</div>
+
+			<button class="btn btn-submit" type="submit">Submit</button>
+		</form>
+		<div class="form-wrapper signup__success">
+			<pre>Submition was successful.</pre >
+		</div>
+	</div>
+	<script src="scripts.js" type="text/javascript"></script>
+</body>
+</html>

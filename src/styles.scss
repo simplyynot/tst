@@ -1,0 +1,33 @@
+.signup {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	.form-wrapper {
+		border: 1px solid #000;
+		height: auto;
+		padding: 25px;
+		width: 400px;
+	}
+	&__form {
+		display: flex;
+		flex-direction: column;
+	}
+	&__form-control {
+		margin-bottom: 15px;
+	}
+	&__mismatch {
+		display: none;
+		margin-bottom: 15px;
+		span {
+			color: red;
+		}
+		&.active {
+			display: block;
+		}
+	}
+	&__success {
+		display: none;
+	}
+}
